@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require 'puppet/provider/package'
-require 'puppet_x/snap/api'
+require_relative '../../../puppet_x/snap/api'
 
 Puppet::Type.type(:package).provide :snap, parent: Puppet::Provider::Package do
   desc "Package management via Snap.

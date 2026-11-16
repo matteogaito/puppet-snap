@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'puppet_x/snap/api'
+require_relative '../../../puppet_x/snap/api'
 
 Puppet::Type.type(:snap_conf).provide(:snap_conf) do
   desc 'Manage snap configuration both system wide and snap specific.'
